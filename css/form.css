@@ -77,77 +77,6 @@ section {
   margin: 0 auto;
 }
 
-/* -------------------main visual  */
-
-#slide{
-  width: inherit;
-  height: 600px;
-  background: #F2EDDF;
-}
-
-.slide_in{
-  width: 900px;
-  height: 600px;
-  position:relative;
-  overflow:hidden;
-  margin: 0 auto;
-}
-.slide_in ul{
-  width: 500%;
-  height:100%;
-  transition:1s;
-}
-.slide_in ul:after{
-  content:"";
-  display:block;
-  clear:both;
-}
-.slide_in li{
-  float:left;
-  width:20%;
-  height:100%;
-  cursor: pointer;
-}
-
-.slide_in li:nth-child(1){background:url(../img/0.png);}
-.slide_in li:nth-child(2){background:url(../img/1.png);}
-.slide_in li:nth-child(3){background:url(../img/2.png);}
-.slide_in li:nth-child(4){background:url(../img/3.png);}
-.slide_in li:nth-child(5){background:url(../img/4.png);}
-
-.slide_in input{display:none;}
-.slide_in label{
-  display:inline-block;
-  vertical-align:middle;
-  width:30px;
-  height:15px;
-  border:3px solid #737373;
-  background:#F2EDDF;;
-  transition:0.3s;
-  border-radius:25px;
-  cursor:pointer;
-}
-.slide_in>.pos{
-  text-align:center;
-  position:absolute;
-  bottom:-5%;
-  left:0;
-  width:100%;
-}
-#pos1:checked~ul{margin-left:0%;}
-#pos2:checked~ul{margin-left:-100%;}
-#pos3:checked~ul{margin-left:-200%;}
-#pos4:checked~ul{margin-left:-300%;}
-#pos5:checked~ul{margin-left:-400%;}
-
-#pos1:checked~.pos>label:nth-child(1){background:#B6F2E1;}
-#pos2:checked~.pos>label:nth-child(2){background:#B6F2E1;}
-#pos3:checked~.pos>label:nth-child(3){background:#B6F2E1;}
-#pos4:checked~.pos>label:nth-child(4){background:#B6F2E1;}
-#pos5:checked~.pos>label:nth-child(5){background:#B6F2E1;}
-
-/* ------------------------------------intro_in */
-
 p {
   font-size: 16px;
   text-align: center;
@@ -164,6 +93,7 @@ p a:hover {background: #F2ACAC;}
   font-weight: bolder;
   text-align: center;
   padding: 50px;
+  font-weight: bold;
 }
 
 .section_in ul li {
@@ -172,6 +102,11 @@ p a:hover {background: #F2ACAC;}
   margin: 10px;
 }
 
+.section_in img {
+  width: 900px;
+  height: auto;
+  margin: 20px 0;
+}
 
 
 /* -------------------------footer */
